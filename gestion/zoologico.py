@@ -16,9 +16,21 @@ class Zoologico():
     def setUbicacion(self,ubicacion):
         self._ubicacion=ubicacion
 
+    def agregarZonas(self,zona):
+        self._zonas.append(zona)
+
+    def cantidadTotalAnimales(self):
+        conta=0
+        for zona in self._zonas:
+            conta+=zona.cantidadAnimales()
     @classmethod
     def getZona(cls):
         return cls._zonas
     @classmethod
     def setZona(cls,zonas):
         cls._zonas= zonas
+    
+
+
+    
+
