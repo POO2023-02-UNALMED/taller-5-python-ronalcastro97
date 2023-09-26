@@ -9,6 +9,7 @@ class Animal():
         self._edad=edad
         self._habitat=habitat
         self._genero=genero
+        Animal._totalAnimales+=1
     
     def getNombre(self):
         return self._nombre
