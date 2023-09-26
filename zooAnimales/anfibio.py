@@ -31,7 +31,7 @@ class Anfibio(Animal):
     @classmethod
     def crearSalamandra(cls,nombre,edad,genero):
         cls.crearSalamandra+=1
-        return cls(nombre,edad,"selva",genero,False)
+        return cls(nombre,edad,"selva",genero,"negro y amarillo",False)
     
     @staticmethod
     def cantidadAnfibios():
