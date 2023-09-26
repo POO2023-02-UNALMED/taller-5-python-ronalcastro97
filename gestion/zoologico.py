@@ -23,6 +23,7 @@ class Zoologico():
         conta=0
         for zona in self._zonas:
             conta+=zona.cantidadAnimales()
+        return conta
     @classmethod
     def getZona(cls):
         return cls._zonas
